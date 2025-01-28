@@ -1,17 +1,38 @@
-*{
-    margin: 0;
-    padding: 0;
-  
+* {
+  margin: 0;
+  padding: 0;
 }
-.main{
-    padding-top: 70px;
-    height: 100dvh;  /*Adust height for the landing page 1 only*/
-    /* background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
-    /* background: rgb(0,0,80);
-    background: linear-gradient(171deg, rgba(0,0,70,1) 0%, rgba(28,181,224,1) 85%, rgba(0,212,255,1) 100%); */
-    
-    /* gradient 3 */
-    background: rgb(21,31,50);
-    background: linear-gradient(320deg, rgba(21,31,50,1) 0%, rgba(15,63,107,1) 100%); 
-}
+.main {
+  padding-top: 70px;
+  height: 100vh; /*Adust height for the landing page 1 only*/
+  color: black;
 
+  /* background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+  /* background: rgb(0,0,80);
+    background: linear-gradient(171deg, rgba(0,0,70,1) 0%, rgba(28,181,224,1) 85%, rgba(0,212,255,1) 100%); */
+
+  /* gradient 3 */
+  background: #f4ce14; /*if not gradient then this*/
+  /* background: linear-gradient(320deg,  #f4ce14 10%,rgb(255, 176, 6) 100%);  */
+
+  /*Generated gradient options*/
+
+  /* Purple Paradise -- nice one make it lighter */
+  /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+
+  /* Midnight City -- nice dark bg */
+  /* background: linear-gradient(135deg, #232526 0%, #414345 100%); */
+  /* color:#fff; */
+
+  /* Aqua Marine --- good.... decrease blur more transparent nav bar */
+  /* background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%); */
+
+  /* Desert Mirage -----nice one */
+  /* background: linear-gradient(115deg, #c79081 0%, #dfa579 100%); */
+
+  /* Frosty Peaks -- noice one for light mode */
+  /* background: linear-gradient(135deg, #accbee 0%, #e7f0fd 100%); */
+
+  /* Vibrant Sunset -- nice one for light mode */
+  /* background: linear-gradient(150deg, #fddb92 0%, #d1fdff 100%); */
+}
