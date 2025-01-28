@@ -1,10 +1,63 @@
+/* Avoiding global styles by targeting only local classes */
+
+/* Reset some default styles to ensure no unexpected behavior */
 * {
   margin: 0;
   padding: 0;
 }
+
 .main {
-  padding-top: 70px;
-  height: 100vh; /*Adust height for the landing page 1 only*/
+  padding-top: 70px;  /* Adjust for nav bar */
+  height: 99vh;  /* Take full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Position content at top and bottom */
+  /* align-items: center;  */
+  /* Center content horizontally */
+
+}
+
+.introDiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+
+.nameDiv {
+  display: flex;
+  align-items: flex-end; /* Align the name at the bottom of the container */
+  justify-content: center; /* Center horizontally */
+  width: 100%;
+  padding-bottom: 20px;  /* Space at the bottom */
+}
+
+.name {
+  font-size: 15vw; /* Make the name responsive and large */
+  font-family: 'Roboto', sans-serif;  /* Modern font */
+  font-weight: bold;
+  color: red;
+  letter-spacing: 1vw;  /* Slightly adjust letter spacing for a modern look */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* // for background gradient */
+.main {
   color: black;
 
   /* background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
@@ -12,7 +65,7 @@
     background: linear-gradient(171deg, rgba(0,0,70,1) 0%, rgba(28,181,224,1) 85%, rgba(0,212,255,1) 100%); */
 
   /* gradient 3 */
-  background: #f4ce14; /*if not gradient then this*/
+  /* background: #f4ce14; if not gradient then this */
   /* background: linear-gradient(320deg,  #f4ce14 10%,rgb(255, 176, 6) 100%);  */
 
   /*Generated gradient options*/

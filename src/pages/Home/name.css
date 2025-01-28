@@ -1,0 +1,8 @@
+.nameDiv{
+    display: flex;
+    height: 90vh;
+    align-items:flex-end;
+    justify-content:center;
+    color:red;
+    
+}
