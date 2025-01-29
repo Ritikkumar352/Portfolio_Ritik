@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import NavBar from './components/Header/NavBar'
 import Home from './pages/Home/Home'
-import About from './pages/About'
+// import About from './pages/About'
 import Name from './pages/Home/Name'
 
 
@@ -15,7 +15,7 @@ function App() {
     <>
       <NavBar></NavBar>
       <Home></Home>
-      <About/>
+      {/* <About/> */}
       <Name/>
     </>
   )

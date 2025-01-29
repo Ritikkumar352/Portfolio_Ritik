@@ -37,7 +37,7 @@ li {
 }
 
 .navLink:hover {
-    color: green;
+    color: black;
     transform: translateY(-15px);
     transform: scale(1.2);
 }

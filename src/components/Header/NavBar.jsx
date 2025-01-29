@@ -9,12 +9,12 @@ function NavBar(){
         <nav>
             <ul>
                 <li><img src="" alt="akjsda" /></li>
-                <li><Link className="navLink" to="/">Ajsdfj</Link></li>
-                <li><Link className="navLink" to="/">Bjsdfj</Link></li>
-                <li><Link className="navLink" to="/">Cjsdfj</Link></li>
-                <li><Link className="navLink" to="/">Djsdfj</Link></li>
-                <li><Link className="navLink" to="/">Ejsdfj</Link></li>
-                <li><img src="" alt="Admin logo" className='adminLogo' /></li>
+                <li><Link className="navLink" to="/">Projects</Link></li>
+                <li><Link className="navLink" to="/">Resume</Link></li>
+                <li><Link className="navLink" to="/">Education</Link></li>
+                <li><Link className="navLink" to="/">About me</Link></li>
+                <li><Link className="navLink" to="/">Contact</Link></li>
+                {/* <li><img src="" alt="Admin logo" className='adminLogo' /></li> */}
                 <li><img src="" alt="Admin logo" className='adminLogo'  /></li>
             </ul>
         </nav>
