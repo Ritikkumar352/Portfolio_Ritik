@@ -6,3 +6,20 @@
     color:red;
     
 }
+
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    
+    .nameDiv {
+      height: 100dvh;
+      padding: 10vh 0;
+    }
+  
+    #name {
+      font-size: 10vw; /* Make the name large for small screens */
+    }
+  }
+  

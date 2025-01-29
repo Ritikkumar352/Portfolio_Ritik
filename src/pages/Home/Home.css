@@ -1,6 +1,3 @@
-/* Avoiding global styles by targeting only local classes */
-
-/* Reset some default styles to ensure no unexpected behavior */
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +5,8 @@
 
 .main {
   padding-top: 70px; /* Adjust for nav bar */
-  height: 99vh; /* Take full viewport height */
+  height: 99vh; 
+  
   display: flex;
   flex-direction: column;
   justify-content: space-between; /* Position content at top and bottom */
@@ -55,9 +53,9 @@
 }
 
 
-.image:hover {
-  /* transform: scale(1.1);   */
-}
+/* .image:hover {
+  transform: scale(1.1);  
+} */
 
  button {
     padding: 10px 20px;
@@ -108,3 +106,49 @@
 .main {
   color: black;
 }
+
+
+
+
+
+
+/* Responsive Design  */
+
+
+/* @media (max-width: 768px) {
+  .main {
+    padding-top: 80px; 
+  }
+
+  .introDiv {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .intro {
+    width: 90vw;
+    height: auto;
+    font-size: 1rem; 
+  }
+
+  .imgDiv {
+    width: 90vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image {
+    height: 30vh;
+    width: 30vh;
+  }
+
+  .nameDiv {
+    padding-bottom: 10px;
+  }
+
+  .name {
+    font-size: 10vw; 
+  }
+} */
