@@ -1,11 +1,29 @@
-*{
-    margin: 0;
-    padding: 0;
-    /* background-color: yellow;     */
-    
+* {
+  margin: 0;
+  padding: 0;
+  /* background-color: yellow;     */
 }
 
 /* body{
     overflow: hidden;
     height: 100%;
 } */
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+/* Flipping Animation */
+.project.flipped {
+    transform: rotateY(180deg);
+  }
+  
+  .project.flipped .project-image,
+  .project.flipped .project-details {
+    backface-visibility: hidden;
+  }
