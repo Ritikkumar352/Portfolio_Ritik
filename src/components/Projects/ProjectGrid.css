@@ -1,9 +1,15 @@
-.grid-container {
+/* .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
     gap: 20px;
     padding: 20px;
+    new lines
+    max-width: ;
+    
   }
+
+  
   
   .project {
     position: relative;
@@ -68,4 +74,114 @@
   
   .project.expanded {
     grid-column: span 2;
+  } */
+
+
+/* // new css */
+
+/* --- GRID CONTAINER --- */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Creates two equal columns per row */
+  gap: 5px;
+  padding: 20px;
+ }
+
+.project {
+  /* set a fixed height  */
+  height: 500px;  
+  
+  margin: auto; 
+ 
+}
+
+@media (min-width: 768px) {
+
+  .grid-container > .project:nth-child(4n+1) {
+    justify-self: start;
+    width: 75%;         
   }
+  .grid-container > .project:nth-child(4n+2) {
+    justify-self: end;  
+    width: 100%;         
+  }
+
+
+  .grid-container > .project:nth-child(4n+3) {
+    justify-self: start; 
+    width: 100%;        
+  }
+  .grid-container > .project:nth-child(4n+4) {
+    justify-self: end;  
+    width: 75%;         
+  }
+}
+
+
+@media (max-width: 767px) {
+  .grid-container {
+    grid-template-columns: 1fr; 
+  }
+  .project {
+    width: 100%;         
+    justify-self: center; 
+  }
+}
+
+.project-image {
+  position: relative;
+  cursor: pointer;
+}
+
+.project-image img {
+  width: 100%;
+  border-radius: 15px;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 15px;
+}
+
+.project-image:hover .overlay {
+  opacity: 1;
+}
+
+.overlay p {
+  text-align: center;
+  margin: 10px;
+}
+
+.overlay button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.project-details {
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+.project.expanded {
+  grid-column: span 1;
+}
