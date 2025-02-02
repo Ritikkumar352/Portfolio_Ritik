@@ -12,8 +12,8 @@ function NavBar(){
                 <li><Link className="navLink" to="/">Projects</Link></li>
                 <li><Link className="navLink" to="/">Resume</Link></li>
                 <li><Link className="navLink" to="/">Education</Link></li>
-                <li><Link className="navLink" to="/">About me</Link></li>
-                <li><Link className="navLink" to="/">Contact</Link></li>
+                <li><Link className="navLink" to="/about">About me</Link></li>
+                <li><Link className="navLink" to="/contact">Contact</Link></li>
                 {/* <li><img src="" alt="Admin logo" className='adminLogo' /></li> */}
                 <li><img src="" alt="Admin logo" className='adminLogo'  /></li>
             </ul>

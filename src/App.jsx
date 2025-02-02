@@ -14,7 +14,15 @@ import ProjectPage from "./components/Projects/ProjectPage";
 function App() {
   return (
     <>
-      <NavBar></NavBar>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Router>
+      {/* <NavBar></NavBar> */}
       <Home></Home>
       {/* <About/> */}
       {/* <Name /> */}
@@ -24,7 +32,7 @@ function App() {
         <ProjectGrid projects={projects} />
       </div> */}
 
-      <ProjectPage/>
+      <ProjectPage />
     </>
   );
 }
