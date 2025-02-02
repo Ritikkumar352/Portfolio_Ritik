@@ -18,7 +18,6 @@ function NavBar(){
                 <li><img src="" alt="Admin logo" className='adminLogo'  /></li>
             </ul>
         </nav>
-
         </>
 
 

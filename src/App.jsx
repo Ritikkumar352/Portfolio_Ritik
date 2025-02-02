@@ -24,7 +24,7 @@ function App() {
         </Routes>
       </Router>
       {/* <NavBar></NavBar> */}
-      <Home></Home>
+      {/* <Home/> */}
       {/* <About/> */}
       {/* <Name /> */}
 
